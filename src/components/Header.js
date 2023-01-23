@@ -3,8 +3,7 @@ import Logo from "../assets/img/foodvilla.png";
 import { Link } from "react-router-dom";
 import useOnline from "../utils/useOnline";
 
-// SPA - Single Page Application???
-// Client Side Routing
+
 
 const Title = () => (
   <a href="/">
@@ -40,7 +39,7 @@ const Header = () => {
           
         </ul>
       </div>
-      <h1>{isOnline ? "✅" : "🔴"}</h1>
+      
       {isLoggedIn ? (
         <button onClick={() => setIsLoggedIn(false)}>Logout</button>
       ) : (
